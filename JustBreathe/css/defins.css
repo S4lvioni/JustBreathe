@@ -1,0 +1,206 @@
+main{
+    overflow-y: visible !important;
+    max-width:1000px;
+}
+.info-wrapper{
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(131,110,129,1) 100%, rgba(0,39,255,1) 100%);
+    background: -webkit-linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(131,110,129,1) 100%, rgba(0,39,255,1) 100%);
+    background: linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(131,110,129,1) 100%, rgba(0,39,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#0027ff",GradientType=1);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.classificacoes .tagfinal{
+    font-family: 'Lobster', cursive;
+}
+.info-titulo{
+    display: inline-flex;
+    color:white;
+    text-align:center;
+    font-family: 'Roboto',sans-serif;
+}
+.info-titulo h5{
+    margin-top:20px;
+}
+.info-aviso{
+    display:flex;
+    flex-direction: column;
+    color:black;
+    align-items: center;
+    border:2px solid black;
+    padding:0.5px;
+    background: rgb(2,0,36);
+    background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(146,46,107,0.4822303921568627) 100%, rgba(0,212,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(146,46,107,0.4822303921568627) 100%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(146,46,107,0.4822303921568627) 100%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+}
+
+.info-aviso p{
+    font-size:12px;
+    color:white;
+    margin-top:0px;
+    text-align: center;
+}
+.icon-aviso{
+    color:white;
+}
+.brand-logo{
+    margin-left:10px;
+}
+.topicmarker{
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    float:left;
+    margin-top:10px;
+}
+.textos{
+    background-color:pink;
+    
+}
+h1 {
+    color: white;
+    font-family: 'Droid serif', serif;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 44px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+p {
+    color: black;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 14px;
+}
+a.textos {
+    color: #b48608;
+    text-decoration: none;
+    border-bottom: 1px solid #4c3a07;
+}
+a:hover {
+    color: #fff;
+}
+.classificacoes {
+    border-top: 1px solid #fff;
+    position: relative;
+    top: 20px;
+    margin-bottom: 30px;
+}
+.classificacoes span {
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+    padding: 2px 5px;
+    background: #fff;
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -10px;
+    font-family: 'Roboto', cursive;
+    transition: transform 1000ms ease-in-out;
+}
+
+.conteudo-ansiedade:hover .classificacoes span{
+    transform: translate(-440px);
+}
+.conteudo-toc:hover .classificacoes span{
+    transform: translate(-440px);
+}
+.conteudo-bipolaridade:hover .classificacoes span{
+    transform: translate(-440px);
+}
+a.btn {
+    font-family: 'Droid serif', serif;
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+    width: 100%;
+    width: 120px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border-top: none;
+    background: rgb(2,0,36);
+background: -moz-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(146,46,134,1) 100%, rgba(0,39,255,1) 100%);
+background: -webkit-radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(146,46,134,1) 100%, rgba(0,39,255,1) 100%);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(146,46,134,1) 100%, rgba(0,39,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#0027ff",GradientType=1);
+}
+a.btn:hover {
+    color: #000;
+    background: white;
+}
+.conteudo-bipolaridade .left{
+    float: left;
+    margin: 0 3% 30px 1%;
+    width: 30%;
+}
+.conteudo-bipolaridade .right {
+    float: right;
+    margin: 0 1% 30px 4%;
+    width: 30%;
+}
+.conteudo-toc .left {
+    float: left;
+    margin: 0 3% 30px 1%;
+    width: 30%;
+}
+.conteudo-toc .right {
+    float: right;
+    margin: 0 1% 30px 4%;
+    width: 30%;
+}
+.conteudo-ansiedade .left {
+    float: left;
+    margin: 0 3% 30px 1%;
+    width: 30%;
+}
+.conteudo-ansiedade .right {
+    float: right;
+    margin: 0 0 30px 4%;
+    width: 30%;
+}
+.conteudo-depressao .left{
+    float: left;
+    margin: 0 3% 30px 1%;
+    width: 30%;
+}
+.conteudo-depressao .right{
+    float: right;
+    margin: 0 0 30px 4%;
+    width: 30%;
+}
+.conteudo-depressao:hover .classificacoes span{
+    transform:translate(-440px)
+}
+a.brand-logo:hover{
+    background: none;
+}
+@media screen and (max-width: 768px) {
+    .left{
+        float: none !important;
+        margin:10px 0 0 20px !important;
+        width:auto !important;
+    }
+    .right{
+        float:none !important;
+        margin:10px 0 0 20px !important;
+        width:auto !important;
+    }
+    .central{
+        margin:10px 0 0 20px;
+    }
+}
+
+

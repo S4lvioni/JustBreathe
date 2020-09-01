@@ -1,0 +1,103 @@
+/*sidenav*/ 
+.sidenav li > a > i,
+.sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"],
+.sidenav li > a > i.material-icons {
+    float:right;
+}
+.sidenav .collapsible-header, .sidenav.fixed .collapsible-header{
+    padding-left:32px;
+}
+.sidenav{
+    width: 270px;
+}
+
+.paddingajuste{
+    padding:32px 32px 0px 0px;
+}
+
+.sidenav .collapsible-header, .sidenav.fixed .collapsible-header{
+    color:#FF5C67 ;
+    background-color:transparent;
+}
+.sidenav li > a.topicos{
+    color:#FF5C67 ;
+    background-color:transparent;
+}
+.sidenav .collapsible-body li a, .sidenav.fixed .collapsible-body li a {
+    padding:0px 23.5px 0px 60px;
+}
+.sidenav li > a.topicos:hover{
+    color:#FF5C67 ;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.sub{
+    text-decoration: none;
+    color:white;
+    position: relative;
+  }
+  .sub::after{
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    height:3px;
+    background: #FA658E;
+    transform:scaleX(0.25);
+    transform-origin: left;
+    transition: transform 300ms ease-in;
+  }
+  .sub:hover::after{
+      transform:scaleX(1);
+  }
+.sublocked{
+    border-bottom: 3px solid #FA658E !important;
+}
+.botaonavbar{
+    margin-left:100px;
+    margin-top: 55px;
+}
+.botaomenu{
+    margin-left:25px;
+    margin-top:-5px;
+}
+.btn-floating {
+    background-color:#D9B4E3;
+}
+.btn-floating:hover {
+    background-color:#D9B4E3;
+}
+.btn-small{
+    background-color:#A96FED;
+}
+.btn-small:hover{
+    background-color:#A96FED;
+}
+
+/*navbar*/
+nav{
+    background-color: #f3e1d8;
+}
+.titulonavbar{
+    font-family: 'Lobster', cursive;
+}
+nav .brand-logo{
+    font-size:3rem;
+    color:#FA658E;
+}
+
+/*footer*/
+.footer-copyright{
+    margin-top: 110px;
+    background-color:#E8998E;
+}
+.textorodape{
+    margin-left:10px;
+    color:black;
+}
+
+
+/*misc*/
+html{
+    font-size:16px;
+}

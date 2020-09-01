@@ -1,0 +1,124 @@
+
+@font-face {
+    font-family: Fontes;
+    src: url("../fonts/Nunito/Nunito-Regular.ttf") format("truetype");
+  }
+.contentwrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+  .dot{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 21.875rem;
+  width: 21.875rem;
+  background-color: #FFA8AE;
+  border-radius: 50%;
+}
+
+.desc{
+    font-family: Fontes;
+    font-size:16px;
+}
+#texto{
+  font-family: Fontes;
+  font-size:2rem;
+  color:#FA658E;
+}
+html{
+    font-size:16px;
+}
+.dot2{
+    transition:4s linear;
+    height:30rem;
+    width:30rem;
+}
+.dot3{
+    transition: 8s linear;
+    height:21.875rem;
+    width:21.875rem;
+}
+.dot:hover{
+    cursor: pointer;
+}
+#texto.textinspire{
+    font-size:5rem ;
+    transition:4s linear;
+    justify-content: center;
+}
+#texto.textexpire{
+    font-size:2rem;
+    transition:8s linear;
+    justify-content: center;
+}
+body{
+    margin:0px;
+}
+
+ @-webkit-keyframes fade-out-bck {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out-bck {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+  }
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width:499px){
+    .dot{
+      width: 19rem;
+      height: 19rem;
+    }
+    .dot3{
+      width: 19rem;
+      height: 19rem;
+    }
+    .dot2{
+      width:24rem;
+      height: 24rem;
+    }
+  }

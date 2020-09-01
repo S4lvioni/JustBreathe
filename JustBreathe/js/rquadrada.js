@@ -1,0 +1,74 @@
+$(() => {
+    clickcontrol=true;
+    rodapecontrole=true;
+    var rodape = $('.footer-copyright');
+    var quadrado = $('.texto');
+    var formasquare = $('.square');
+    var modtexto=$('#texto');
+    $('.square').click(function(){
+        if(clickcontrol==true){
+            clickcontrol=false;
+            rodapecontrole=false;
+            if(rodapecontrole==false){
+                setTimeout(()=>{
+                    $(formasquare).addClass('quadradodesce');
+                    $(rodape).addClass('rodapeinv');
+                },01);
+                setTimeout(()=>{
+                    $(rodape).addClass('rodaperemov');
+                    $(formasquare).removeClass('quadradodesce');
+                    $(formasquare).addClass('quadradosobe');
+                },1000);
+                setTimeout(()=>{
+                    $(formasquare).removeClass('quadradosobe');
+                    $(formasquare).addClass('quadradoexpansivel');
+                },2000);
+                setTimeout(()=>{
+                    $(quadrado).addClass('textohoriz').removeClass('texto');
+                    document.getElementById('texto').textContent="Inspire";
+                },2000);
+                setTimeout(()=>{
+                    $(modtexto).addClass('textosome');
+                },5500);
+                setTimeout(()=>{
+                    $(modtexto).removeClass('textosome');
+                    document.getElementById('texto').textContent="Segure";
+                    $(formasquare).addClass('quadradocompleto');
+                   $(formasquare).removeClass('quadradoexpansivel');
+                },6000);
+                setTimeout(()=>{
+                    $(modtexto).addClass('textosome');
+                },9500);
+                setTimeout(()=>{
+                    $(modtexto).removeClass('textosome');
+                    document.getElementById('texto').textContent="Expire";
+                    $(formasquare).addClass('quadradoretorno');
+                    $(formasquare).removeClass('quadradocompleto');
+                },10500);
+                setTimeout(()=>{
+                    $(modtexto).addClass('textosome');
+                },13500);
+                setTimeout(()=>{
+                    $(modtexto).removeClass('textosome');
+                    document.getElementById('texto').textContent="Espere";
+                    $(formasquare).addClass('quadradoretornoy');
+                    $(formasquare).removeClass('quadradoretorno');
+                },14500);
+                setTimeout(()=>{
+                    $(formasquare).addClass('quadradosome');
+                    $(formasquare).removeClass('quadradoretornoy');
+                    clickcontrol=true;
+                    $(rodape).removeClass('rodapeinv').removeClass('rodaperemov').addClass('rodapevis');
+                    document.getElementById('texto').textContent=" ";
+                },18000);
+                setTimeout(()=>{
+                    $(formasquare).addClass('quadradopadrao');
+                    $(formasquare).removeClass('quadradosome');
+                    $(rodape).removeClass('rodapevis');
+                },22000);
+                setTimeout(()=>{
+                    $(modtexto).removeClass('textohoriz');
+                },22500);
+        }}
+    });
+});
